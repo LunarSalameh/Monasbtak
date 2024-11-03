@@ -1,11 +1,11 @@
 export default function SignUp() {
     return (
-      <div className="min-h-screen w-3/4 p-8 pb-20 mx-auto">
-        <div className="bg-gray-100 my-20 grid grid-cols-1 md:grid-cols-2 rounded-2xl shadow-xl shadow-gray-500">
+      <div className="  bg-gray-100 p-8 pb-20 ">
+        <div className=" w-[80%] mx-auto my-20 bg-white grid grid-cols-1 lg:grid-cols-2 rounded-2xl shadow-xl shadow-gray-500">
            
-            <div className="flex flex-col gap-6 w-full px-8 py-10 md:p-8 justify-center">
+            <div className="flex flex-col gap-6 w-full px-8 py-10 md:p-8 justify-center ">
                 <div className="text-center">
-                    <div className="text-[#4C1B41] font-bold text-3xl">MONASBTAK</div>
+                    <img src="/Monasbtak-EN-logo.png" className=" w-full"/>
                     <div className="text-lg my-2">All Your Planners In ONE PLACE!</div>
                 </div>
                 
@@ -67,26 +67,20 @@ export default function SignUp() {
                             <input type="radio" name="userType" value="Customer" className="text-[#4c1b41]"/> Customer</label>
 
                         <label className="flex items-center gap-2">
-                            <input type="radio" name="userType" value="Other" className="text-[#4c1b41]"/> Other (e.g., planner, venue, or vendor)</label>
+                            <input type="radio" name="userType" value="Other" className="text-[#4c1b41]"/> Other (planner, venue, or vendor)</label>
 
                     </div>
                 </div>
 
                 <div className="flex flex-col items-center gap-4">
-                    <button className="bg-[#4C1B41] px-10 py-3 mt-4 rounded-full text-center text-white w-full md:w-auto">Sign Up</button>
+                    <button className="bg-[#4C1B41] px-10 py-3 mt-4 rounded-full text-center text-white w-full  ">Sign Up</button>
                     <div className="font-bold mt-2">Already Registered? <a href={'/general/signIn'} className="text-[#4C1B41]">Sign In</a></div>
                 </div>
                 
             </div>
 
-            <div className="flex justify-center items-center rounded-2xl max-md:hidden">
-                <figure className="w-full h-full">
-                    <img 
-                      src='/Monasbtak-EN.png' 
-                      alt="Monasbtak Logo" 
-                      className="w-full h-full object-cover"
-                    />
-                </figure>
+            <div className="hidden lg:block justify-center items-center p-8  relative ">
+                    <img src='/Event1.jpg' alt="Monasbtak Logo" className="absolute inset-0  w-full  h-full object-cover rounded-r-2xl"/>
             </div>
         </div>
       </div>
