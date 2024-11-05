@@ -1,12 +1,18 @@
 import React from 'react'
 import './page.css'
+import Navbar from '../../components/navbar/page'
+import Footer from '../../components/footer/page'
 import EditProfile from '../../components/Customers/editProfileDetails/page'
 
 function page() {
   return (
-    <div className='Page-Container'>
-        <EditProfile />
-    </div>
+    <>
+      <Navbar />
+      <div className='Page-Container'>
+          <EditProfile />
+      </div>
+      <Footer />
+    </>
   )
 }
 

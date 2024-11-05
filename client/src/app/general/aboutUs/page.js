@@ -43,10 +43,10 @@ export default function Aboutus() {
     return (
       <>
       <Navbar />
-      <div className="min-h-screen p-8 pb-20 max-w-5xl mx-auto  ">
+      <div className="min-h-screen p-8 pb-20 max-w-5xl mx-auto ">
 
         {/* what do we offer Section */ }
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col gap-10 pt-[2rem] ">
           <div >
             <div className="font-bold text-[#4C1B41] text-4xl mb-2">WHAT DO WE OFFER</div>
             <div className=" border-b-4 border-solid border-[#4C1B41] rounded-full"></div>

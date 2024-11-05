@@ -5,8 +5,8 @@ export default function SignUp() {
     return (
       <>
       <Navbar />
-            <div className="  bg-gray-100 p-8 pb-20 ">
-        <div className=" w-[80%] mx-auto my-20 bg-white grid grid-cols-1 lg:grid-cols-2 rounded-2xl shadow-xl shadow-gray-500">
+            <div className="  bg-gray-100 p-1 pb-[2rem] ">
+        <div className=" w-[80%] mx-auto my-20 mt-[3.5rem] bg-white grid grid-cols-1 lg:grid-cols-2 rounded-2xl shadow-xl shadow-gray-500">
            
             <div className="flex flex-col gap-6 w-full px-8 py-10 md:p-8 justify-center ">
                 <div className="text-center">
