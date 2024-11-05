@@ -1,6 +1,8 @@
 "use client";
 
 import React, {useState} from "react";
+import Navbar from '../../components/navbar/page';
+import Footer from '../../components/footer/page';
 
    const ourTeam = [
       {
@@ -39,6 +41,8 @@ export default function Aboutus() {
  
 
     return (
+      <>
+      <Navbar />
       <div className="min-h-screen p-8 pb-20 max-w-5xl mx-auto  ">
 
         {/* what do we offer Section */ }
@@ -121,6 +125,8 @@ export default function Aboutus() {
           </div>
         </div>
       </div>
+      <Footer />
+      </>
     );
   }
   

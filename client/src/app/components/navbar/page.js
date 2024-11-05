@@ -1,4 +1,4 @@
-import stl from './navbar.module.css';
+import stl from './Navbar.module.css';
 import logo from '../../assets/monasbtak logo.jpg'
 const Navbar = () => {
   return (

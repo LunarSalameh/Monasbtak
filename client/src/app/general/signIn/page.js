@@ -1,8 +1,10 @@
-import Navbar from "@/app/components/navbar/page";
+import Navbar from '../../components/navbar/page';
+import Footer from '../../components/footer/page';
 
 export default function SignIn() {
     return (
         <>
+        <Navbar />
       <div className="p-8 pb-20 bg-gray-100">
         <div className="w-[80%] m-auto bg-white  grid grid-cols-1  lg:grid-cols-2 rounded-2xl shadow-xl shadow-gray-500">
             <div className="hidden lg:block justify-center items-center p-8  relative ">
@@ -42,6 +44,7 @@ export default function SignIn() {
             </div>
         </div>
       </div>
+      <Footer />
       </>
     );
 }
