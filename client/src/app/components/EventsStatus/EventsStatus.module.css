@@ -1,0 +1,73 @@
+.statusContainer {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap to the next line */
+  justify-content: center;
+  gap: 50px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  background-color: rgb(252, 246, 238);
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 150px; /* Fixed width for larger screens */
+}
+
+.status img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+
+.status span {
+  font-size: 14px;
+  color: #4c1b41;
+  margin-bottom: 5px;
+}
+
+.status h3 {
+  font-size: 20px;
+  color: #4c1b41;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .statusContainer {
+    gap: 15px;
+  }
+
+  .status {
+    width: 45%; /* Adjust width to fit two items per row */
+  }
+}
+
+@media (max-width: 480px) {
+  .statusContainer {
+    flex-direction: column; /* Stack items vertically on very small screens */
+    align-items: center;
+  }
+
+  .status {
+    width: 100%; /* Full width on extra small screens */
+    margin-bottom: 15px;
+  }
+
+  .status img {
+    width: 35px; /* Slightly smaller icon on smaller screens */
+    height: 35px;
+  }
+
+  .status h3 {
+    font-size: 18px; /* Slightly smaller text */
+  }
+}
