@@ -1,5 +1,5 @@
 import stl from './Navbar.module.css';
-import logo from '../../assets/monasbtak logo.jpg'
+import logo from '../../assets/monasbtak-logo.jpg'
 const Navbar = () => {
   return (
     <nav className={stl.navbar}>
