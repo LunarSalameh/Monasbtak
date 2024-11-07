@@ -23,7 +23,7 @@ const Footer = ()=>{
         <div className='bg-[#4c1b41] pb-[3.5rem] text-white grid lg:grid-cols-[2.5fr,1fr,1fr,1fr] grid-row-2 gap-8 justify-center justify-items-center px-10  '>
             {/** LOGO & BRIEF */}
             <div className='flex flex-col gap-3 -mt-3 items-center'>
-                <Link href="/">  <img src="/Golden-logo.png" /> </Link>
+                <Link href="/customers/landingPage">  <img src="/Golden-logo.png" /> </Link>
                 <p> Whether you’re organizing a wedding, a corporate event, or a celebration, we offer a curated selection of professionals who can bring your vision to life with creativity and expertise.</p>
             </div>
            

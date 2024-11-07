@@ -55,6 +55,11 @@ body {
     font-size: 20px;
     padding-top: 15px;
     padding-left: 22px;
+    gap: 10px;
+}
+
+.Info-Details span {
+    align-items: center;
 }
 
 .Profile-Image {

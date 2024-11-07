@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <nav className={stl.navbar}>
       <div className={stl.navbar_brand}>
-        <img src="/Golden-logo.png" alt="logo" className={stl.logo}  />
+        <a href="/customers/landingPage"><img src="/Golden-logo.png" alt="logo" className={stl.logo} /></a>
       </div>
       <ul className={stl.navbar_list}>
         <li className={stl.navbar_item}><a href="/customers/landingPage">Home</a></li>

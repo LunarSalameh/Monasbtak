@@ -1,22 +1,24 @@
 .slider {
   overflow: hidden;
   position: relative;
-  border-radius: 20px;
   width: 70%;
   height: auto;
 }
 
 .imgs {
-  width: 100%;
+  width: 95%;
   height: 460px; /* Consider changing this to a relative unit (like vh) for better responsiveness */
   display: flex;
   transition: transform 0.5s ease; /* Smooth transition for slide change */
+  border-radius: 20px;
+
 }
 
 .imgs img {
   width: 100%;
   height: auto; /* Maintain aspect ratio */
   object-fit: cover;
+
 }
 
 /* Navigation buttons */
@@ -37,7 +39,7 @@
 }
 
 .prev {
-  right: 2%;
+  right: 7%;
 }
 
 .nxt {

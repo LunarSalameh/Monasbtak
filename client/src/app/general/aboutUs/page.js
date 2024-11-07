@@ -19,7 +19,7 @@ import Footer from '../../components/footer/page';
       },
       {
         name: 'Abdelrahman', 
-        Photo: '/abd.png'
+        Photo: '/Abd.jpeg'
       },
     ]
 export default function Aboutus() {
