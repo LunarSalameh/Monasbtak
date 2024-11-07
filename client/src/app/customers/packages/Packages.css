@@ -1,0 +1,32 @@
+.packages-container {
+    padding: 2rem;
+    text-align: center;
+    color:#4C1B41;
+}
+
+.packages-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2px;
+}
+.packages-container h1 {
+    font-size: 36px;
+    color: #4C1B41;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.packages-container h2 {
+    font-size: 25px;
+    color: #4C1B41;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+.line{
+    height: 5% ;
+    border: none;
+    border-top: 5px solid #4C1B41; 
+    width: 100%;
+    margin-bottom: 2%;
+  }
