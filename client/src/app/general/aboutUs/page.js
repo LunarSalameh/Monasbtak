@@ -48,7 +48,7 @@ export default function Aboutus() {
         {/* what do we offer Section */ }
         <div className="flex flex-col gap-10 pt-[2rem] ">
           <div >
-            <div className="font-bold text-[#4C1B41] text-4xl mb-2">WHAT DO WE OFFER</div>
+            <div className="font-bold text-[#4C1B41] text-4xl mb-2" id="WhatDoWeOffer">WHAT DO WE OFFER</div>
             <div className=" border-b-4 border-solid border-[#4C1B41] rounded-full"></div>
           </div>
           
@@ -80,12 +80,12 @@ export default function Aboutus() {
           {/* Our Team Section */ }
 
           <div >
-            <div className="font-bold text-[#4C1B41] text-4xl mb-2">OUR TEAM</div>
+            <div className="font-bold text-[#4C1B41] text-4xl mb-2" id="OurTeam">OUR TEAM</div>
             <div className=" border-b-4 border-solid border-[#4C1B41] rounded-full"></div>
           </div>
 
           {/* Team Members */ }
-          <div className="flex">
+          <div className="flex justify-items-center justify-evenly">
 
           <button onClick={() => handleSlider(false)} className="lg:hidden">
           <svg className="h-8 w-8 text-[#4C1B41]"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -93,28 +93,33 @@ export default function Aboutus() {
           </svg>
           </button>
 
-          <div className=" gap-10 max-md:flex-col mx-auto text-lg">
-          <div className="lg:grid hidden  lg:grid-cols-4  font-bold p-6 text-center">
-             {
-              ourTeam.map((member,index)=>(
-                <div key={index} className="flex flex-col font-bold p-6 text-center gap-5 ">
-                  <img 
-                      src={member.Photo} 
-                      alt={member.name}
-                      className="rounded-full w-40 h-40"
-                  />
-                  <div className='text-[#4C1B41]'>{member.name}</div>
+         {/* Large screens*/}
+            <div className="lg:grid hidden lg:grid-cols-4 font-bold p-6 text-center ">
+              {ourTeam.map((member, index) => (
+                <div key={index} className="flex flex-col font-bold p-6 text-center gap-5">
+                  <img src={member.Photo} alt={member.name} className="rounded-full w-40 h-40" />
+                  <div className="text-[#4C1B41]">{member.name}</div>
                 </div>
-              ))
-            }
-          </div>
+              ))}
+            </div>
 
-          {/** small screens members  */}
-          <div className="lg:hidden text-center flex flex-col items-center gap-5">
-            <img src={ourTeam[slider].Photo} alt={ourTeam[slider].name} className="rounded-full w-40 h-40" />
-            <div className="text-[#4C1B41] font-bold">{ourTeam[slider].name}</div>
-          </div>
-          </div>
+            {/* Medium screens */}
+            <div className="hidden md:flex lg:hidden text-center flex-col gap-5">
+              <div className="flex gap-10 ">
+                {[0, 1].map((offset) => (
+                  <div key={offset} className="flex flex-col items-center">
+                    <img src={ourTeam[(slider + offset) % ourTeam.length].Photo} alt={ourTeam[(slider + offset) % ourTeam.length].name} className="rounded-full w-40 h-40" />
+                    <div className="text-[#4C1B41] font-bold">{ourTeam[(slider + offset) % ourTeam.length].name}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Small screens */}
+            <div className="lg:hidden md:hidden text-center flex flex-col items-center gap-5">
+              <img src={ourTeam[slider].Photo} alt={ourTeam[slider].name} className="rounded-full w-40 h-40" />
+              <div className="text-[#4C1B41] font-bold">{ourTeam[slider].name}</div>
+            </div>
           
           <button onClick={() => handleSlider(true)} className="lg:hidden">
             <svg className="h-8 w-8 text-[#4C1B41]"  fill="none" viewBox="0 0 24 24" stroke="currentColor">

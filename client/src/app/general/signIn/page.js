@@ -5,7 +5,7 @@ export default function SignIn() {
     return (
         <>
         <Navbar />
-      <div className="p-8 pb-20 bg-gray-100 pt-[3.7rem]">
+      <div className="p-10">
         <div className="w-[80%] m-auto bg-white  grid grid-cols-1  lg:grid-cols-2 rounded-2xl shadow-xl shadow-gray-500">
             <div className="hidden lg:block justify-center items-center p-8  relative ">
                     <img src='/Event1.jpg' alt="Monasbtak Logo" className="absolute inset-0  w-full  h-full object-cover rounded-l-2xl"/>

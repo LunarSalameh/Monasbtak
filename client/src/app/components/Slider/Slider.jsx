@@ -1,28 +1,29 @@
-import { useState } from "react";
-import stl from "./Slider.module.css";
-import slide1 from "../assets/slider11.jpg";
-import slide2 from "../assets/slider22.jpg";
-import leftArrow from "../assets/left-arrow.png";
-import rightArrow from "../assets/right-arrow.png";
+"use client";
+import { useState, useEffect } from "react";
+import stl from "./slider.module.css";
+
 const Slider = () => {
-  const slides = [slide1, slide2];
+  const slides = ['/slider11.jpg', '/slider22.jpg'];
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const next = () => {
-    if (currentSlide === slides.length - 1) return;
-    setCurrentSlide((pre) => pre + 1);
+    setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
   };
-  const prev = () => {
-    if (currentSlide === 0) return;
 
-    setCurrentSlide((pre) => pre - 1);
+  const prev = () => {
+    setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
   };
+
+  useEffect(() => {
+    const interval = setInterval(next, 4000); // Change slide every second
+    return () => clearInterval(interval); // Cleanup interval on component unmount
+  }, [currentSlide]);
 
   return (
     <div className={stl.slider}>
       <div className={stl.btns}>
-        <img src={rightArrow} className={stl.prev} onClick={next} />
-        <img src={leftArrow} className={stl.nxt} onClick={prev} />
+        <img src='/right-arrow.png' className={stl.prev} onClick={next} />
+        <img src='/left-arrow.png' className={stl.nxt} onClick={prev} />
       </div>
       <div className={"slide"}>
         <img src={slides[currentSlide]} alt="" className={stl.imgs} />

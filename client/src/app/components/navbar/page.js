@@ -19,7 +19,7 @@ const Navbar = () => {
         <img src="/Golden-logo.png" alt="logo" className={stl.logo}  />
       </div>
       <ul className={stl.navbar_list}>
-        <li className={stl.navbar_item}><a href="/">Home</a></li>
+        <li className={stl.navbar_item}><a href="/customers/landingPage">Home</a></li>
         <li className={stl.navbar_item}><a href="#categories">Categories</a></li>
         <li className={stl.navbar_item}><a href="/customers/profile">profile</a></li>
         <li className={stl.navbar_item}><a href="/general/aboutUs">About Us</a></li>

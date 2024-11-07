@@ -41,3 +41,7 @@
 .footerSection a:hover{
     color: #d9b34d;
 }
+.bgGray100 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255, 255, 255);
+  }

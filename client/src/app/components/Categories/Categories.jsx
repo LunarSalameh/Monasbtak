@@ -1,31 +1,28 @@
-import { Link } from "react-router-dom";
-import stl from "../components/Categories.module.css";
-import weddingImg from "../assets/wedding.png";
-import graduationImg from "../assets/grad.png";
-import kidsImg from "../assets/pregnant-woman-standing-by-window-looking-photo.jpg";
-import birthdayImg from "../assets/birthday.png";
-import formalImg from "../assets/formal.png";
-import otherImg from "../assets/other.png";
+"use client";
+import Link from "next/link";
+import stl from "./Categories.module.css";
 
 const categories = [
-  { id: 1, name: "Wedding", image: weddingImg },
-  { id: 2, name: "Graduation", image: graduationImg },
-  { id: 3, name: "maternity", image: kidsImg },
-  { id: 4, name: "Bithday", image: birthdayImg },
-  { id: 5, name: "Formal event", image: formalImg },
-  { id: 6, name: "Customized", image: otherImg },
+  { id: 1, name: "Wedding", image: '/wedding-category.jpg' },
+  { id: 2, name: "Graduation", image: '/grad-category.jpg' },
+  { id: 3, name: "maternity", image: '/maternity.jpg' },
+  { id: 4, name: "Bithday", image: '/birthday.jpg' },
+  { id: 5, name: "Formal event", image: '/formal.jpg' },
+  { id: 6, name: "Customized", image: '/customized.png' },
 ];
 
 const Categories = () => {
   return (
-    <div id="categories" className={`container ${stl.wrapper}`}>
-      <h2>Categories</h2>
+    <div className={stl.pageContainer}>
+      <span className={`${stl.largeFontSize} ${stl.fontColor} ${stl.boldFont}`}>Categories</span>
+      <hr className={stl.line}/>
+      <div id="categories" className={`container ${stl.wrapper}`}>
       <div className={stl.Container}>
         {categories.map((category) => (
           <Link
             key={category.id}
             className={stl.categoryCard}
-            to={`/category/${category.id}`}
+            href={`/customers/subCategories`}
           >
             <div className={stl.cardHeader}>
               <img
@@ -40,6 +37,7 @@ const Categories = () => {
             </div>
           </Link>
         ))}
+      </div>
       </div>
     </div>
   );
