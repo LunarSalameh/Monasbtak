@@ -13,12 +13,13 @@
   height: 5% ;
   border: none;
   border-top: 5px solid #4C1B41; 
-  width: 95%;
+  width: 100%;
   margin-bottom: 2%;
   border-radius: 10px;
 }
 .pageContainer{
   margin-top: 3%;
+  width: 80%;
 }
 .wrapper {
   display: flex;
