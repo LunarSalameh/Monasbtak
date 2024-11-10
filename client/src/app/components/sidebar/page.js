@@ -12,12 +12,12 @@ export default function Sidebar () {
     const [open,setOpen] = useState(true);
 
     const menu = [
-        {title: "Home Dashboard", src:<FaKey/> },
-        {title: "Planner Profile", src:<MdPeopleAlt/> },
-        {title: "packages", src:<FiPackage/>  },
-        {title: "Event Album", src:<IoMdPhotos/>},
-        {title: "Events", src:<FaRegCalendarCheck /> },
-        {title: "Revenue", src:<FaDollarSign /> }
+        {title: "Home Dashboard", src:<FaKey/> , path:"/planners/home"},
+        {title: "Planner Profile", src:<MdPeopleAlt/>, path:"/planners/profile" },
+        {title: "packages", src:<FiPackage/> , path:"/planners/packages" },
+        {title: "Event Album", src:<IoMdPhotos/>, path:"/planners/eventAlbum"},
+        {title: "Events", src:<FaRegCalendarCheck /> , path:"/planners/allEvents"},
+        {title: "Revenue", src:<FaDollarSign />, path:"/planners/revenue" }
     ]
 
 
@@ -37,16 +37,19 @@ export default function Sidebar () {
                             </div>
                     }
                     
-                    <ul className={`flex flex-col gap-5 justify-center py-7 ${open ? "px-4" : "px-3"} text-center`} >
+                    <ul className={`flex flex-col gap-5 justify-center py-7 ${open ? "px-4" : "px-1"} text-center`} >
                         {menu.map((Menu,index) => (
                             <li 
                                 key={index}
-                                className={`flex cursor-pointer items-center `}
+                                className={`flex cursor-pointer p-2 items-center justify-items-center active:bg-[#D9B34D] active:text-white hover:bg-gray-100 rounded-lg`}
                             >
-                                <div className="flex gap-4">
-                                    <div className="flex justify-center items-center">{Menu.src}</div>
-                                    <span className={` ${!open && "hidden"} origin-left duration-200`}>{Menu.title}</span>
-                                </div>
+                                <a
+                                    href={Menu.path}>
+                                    <div className="flex gap-4">
+                                        <div className="flex justify-center items-center">{Menu.src}</div>
+                                        <span className={` ${!open && "hidden"} origin-left duration-200`}>{Menu.title}</span>
+                                    </div>
+                                </a>
                             </li>
                         ))}
                     </ul>
