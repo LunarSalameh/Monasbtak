@@ -111,25 +111,9 @@
 .sidebar_item a:hover {
   text-decoration: underline;
 }
+ 
 
-@media (max-width: 1200px) {
-  /* Add any styles needed for this breakpoint */
-  .Navbar{
-    display: flex;
-    flex-direction: row;
-    height: auto;
-    align-items: center;
-}
-.navbar_list {
-  display: block;
-}
-
-.navbarMenuIcon {
-  display: none; 
-}
-}
-
-@media screen and (max-width: 768px) {
+@media (max-width:1200px){
   .Navbar{
     display: flex;
     flex-direction: row;
@@ -149,52 +133,6 @@
 }
 .logo{
   height: 70px;
-  width: auto;
-}
-}
-
-@media (max-width: 576px) {
-  .Navbar{
-    display: flex;
-    flex-direction: row;
-    height: auto;
-    align-items: center;
-}
-.navbar_list {
-  display: none; 
-}
-
-.navbarMenuIcon {
-  display: block; 
-}
-.sidebar {
-  height: 45%;
-}
-.logo{
-  height: 70px;
-  width: auto;
-}
-}
-
-@media (max-width: 400px) {
-  .Navbar{
-    display: flex;
-    flex-direction: row;
-    height: auto;
-    align-items: center;
-}
-.navbar_list {
-  display: none; 
-}
-
-.navbarMenuIcon {
-  display: block;
-}
-.sidebar {
-  height: 45%;
-}
-.logo{
-  height: 50px;
   width: auto;
 }
 }
