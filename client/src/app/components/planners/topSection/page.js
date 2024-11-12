@@ -12,7 +12,7 @@ export default function TopSection () {
                 </div>
 
                 {/**Status Section */}
-                <div className="bg-white rounded-xl  w-[80%]  grid lg:grid-cols-4 md:grid-cols-2 max-sm:grid-cols-1 gap-3 p-5">
+                <div className="bg-white rounded-xl shadow-md  w-[80%]  grid lg:grid-cols-4 md:grid-cols-2 max-sm:grid-cols-1 gap-3 p-5">
 
                     {/**Pending Events */}
                     <div className="flex gap-3 m-2">

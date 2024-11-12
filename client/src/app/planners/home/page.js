@@ -13,9 +13,9 @@ export default function PlannerHome () {
             <Sidebar/>
             <div className="flex flex-col mx-auto w-full">
                 <TopSection />
-                {/*<PendingOffers/>
-                <CurrentEvents />
-                <PreviousEvents />*/}
+                <PendingOffers/>
+                {/* <CurrentEvents />
+                <PreviousEvents /> */}
             </div>
         </div>
         </>
