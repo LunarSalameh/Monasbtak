@@ -8,7 +8,7 @@ export default function AllEvents () {
         <>
             <div className="flex">
             <Sidebar/>
-            <div className="flex flex-col mx-auto w-full">
+            <div className="flex flex-col" style={{width:'90%', marginLeft:'auto'}}>
                 <TopSection />
                 all events
             </div>

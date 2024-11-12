@@ -11,7 +11,7 @@ export default function PlannerHome () {
         <>
         <div className="flex">
             <Sidebar/>
-            <div className="flex flex-col mx-auto w-full">
+            <div className="flex flex-col" style={{width:'90%', marginLeft:'auto'}}>
                 <TopSection />
                 <PendingOffers/>
                 {/* <CurrentEvents />
