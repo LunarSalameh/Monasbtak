@@ -28,7 +28,7 @@ const PackageDetails = () => {
       </div>
       <div className='headline'>
         <h1 className="title large-font-size bold-font">Booking Details</h1>
-        <span className='semi-line'></span>
+        <span className='line'></span>
       </div>
     </div>
   );

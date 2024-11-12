@@ -53,7 +53,7 @@ export default function Aboutus() {
           </div>
           
           <div className="flex lg:flex-row gap-12 justify-center items-center max-sm:flex-col">
-            <div className="w-3/4 text-lg">At <b>Monasbtak</b>, we bring together Jordan’s best event planners, venues, decorators, and photographers, all in one easy-to-use platform. Our goal is to make every step of planning your event smooth, inspiring, and tailored to your vision.
+            <div className="w-3/4 text-[24px]">At <b>Monasbtak</b>, we bring together Jordan’s best event planners, venues, decorators, and photographers, all in one easy-to-use platform. Our goal is to make every step of planning your event smooth, inspiring, and tailored to your vision.
             <div className="max-sm:hidden max-md:hidden"> Whether you’re organizing a wedding, a corporate event, or a celebration, we offer a curated selection of professionals who can bring your vision to life with creativity and expertise.</div> </div>
             <figure className="max-sm:w-2/3 md:w-1/2">
               <img 
@@ -71,7 +71,7 @@ export default function Aboutus() {
                   className="rounded-xl"
               ></img>
             </figure>
-            <div className="w-3/4 text-lg">
+            <div className="w-3/4 text-[24px]">
             You can easily browse portfolios, read reviews, and make informed decisions all in one place, ensuring you receive top-quality services for a memorable event.
             <div className="max-sm:hidden max-md:hidden"> To make things even easier, <b>Monasbtak</b> offers both customizable packages and tailored quotes to meet your unique requirements and budget, giving you the flexibility and convenience you need to find the best fit for your event. </div>
             </div>
