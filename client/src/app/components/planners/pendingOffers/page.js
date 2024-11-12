@@ -49,7 +49,7 @@ export default function PendingOffers () {
 
     return ( 
         <>
-            <div className="bg-white rounded-lg mx-10 p-5 h-fit shadow-lg ">
+            <div className="bg-white rounded-lg mx-10 p-5  shadow-lg ">
                 <div className="flex flex-col">
                     <h1 className="font-bold text-3xl mb-3">Pending Offers </h1>
                     <hr/>
