@@ -1,0 +1,32 @@
+{
+    "navbar": {
+      "home": "Home",
+      "categories": "Categories",
+      "profile": "Profile",
+      "about": "About Us",
+      "signup": "Sign Up"
+    }
+    ,
+      "footer": {
+        "brief": "Whether you’re organizing a wedding, a corporate event, or a celebration, we offer a curated selection of professionals who can bring your vision to life with creativity and expertise.",
+        "about": "About",
+        "whatWeOffer": "What Do We Offer",
+        "aboutUs": "About Us",
+        "ourTeam": "Meet The Team",
+        "community": "Community",
+        "categories": "Categories",
+        "profile": "Profile",
+        "socials": "Socials",
+        "instagram": "Instagram",
+        "twitter": "Twitter",
+        "facebook": "Facebook"
+      },
+      
+      "websiteDesc": {
+        "title": "What do we offer",
+        "description1": "At Monasbtak, we bring together Jordan’s best event planners, venues, decorators, and photographers, all in one easy-to-use platform. Our goal is to make every step of planning your event smooth, inspiring, and tailored to your vision.",
+        "description2": "You can easily browse portfolios, read reviews, and make informed decisions all in one place, ensuring you receive top-quality services for a memorable event. To make things even easier, Monasbtak offers both customizable packages and tailored quotes to meet your unique requirements and budget."
+      }
+    
+    
+  }

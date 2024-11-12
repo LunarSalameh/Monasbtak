@@ -1,10 +1,11 @@
 
-
+import { useTranslation } from "react-i18next";
 import stl from './Footer.module.css';
 import Link from 'next/link';
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 const Footer = ()=>{
+    const { t } = useTranslation();
     return(
         <footer className='  top-0 left-0 w-full z-10'>
         <svg className={stl.bgGray100} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 160">
@@ -24,41 +25,41 @@ const Footer = ()=>{
             {/** LOGO & BRIEF */}
             <div className='flex flex-col gap-3 -mt-3 items-center'>
                 <Link href="/customers/landingPage">  <img src="/Golden-logo.png" /> </Link>
-                <p> Whether you’re organizing a wedding, a corporate event, or a celebration, we offer a curated selection of professionals who can bring your vision to life with creativity and expertise.</p>
+                <p>{t("footer.brief")}</p>
             </div>
            
            {/** ABOUT */}
             <div className='lg:block hidden '>
                 
                 <ul className='flex flex-col gap-4'>
-                    <li className='font-bold text-lg'>About</li>
+                    <li className='font-bold text-lg'>{t("footer.about")}</li>
                     <li>
-                        <Link href='/general/aboutUs#whatDoWeOffer' className='hover:text-[#d9b34d]'>What Do We Offer</Link>
+                        <Link href='/general/aboutUs#whatDoWeOffer' className='hover:text-[#d9b34d]'>{t("footer.whatWeOffer")}</Link>
                     </li>
                     <li>
-                        <Link href="/general/aboutUs" className='hover:text-[#d9b34d]'>About Us </Link>
+                        <Link href="/general/aboutUs" className='hover:text-[#d9b34d]'>{t("footer.aboutUs")}</Link>
                     </li>
                     <li>
-                        <Link href="/general/aboutUs#OurTeam" className='hover:text-[#d9b34d]'>Meet The Team</Link>
+                        <Link href="/general/aboutUs#OurTeam" className='hover:text-[#d9b34d]'>{t("footer.ourTeam")}</Link>
                     </li>
                 </ul>
             </div>
            {/** COMMUNITY */}
             <div className='lg:block hidden'>
                 <ul className='flex flex-col gap-4'>
-                    <li className='font-bold text-lg'>Community</li>
+                    <li className='font-bold text-lg'>{t("footer.community")}</li>
                     <li>
-                        <Link href="/customers/landingPage" className='hover:text-[#d9b34d]'>Categories</Link>
+                        <Link href="/customers/landingPage" className='hover:text-[#d9b34d]'>{t("footer.categories")}   </Link>
                     </li>
                     <li>
-                        <Link href="../customers/profile" className='hover:text-[#d9b34d]'>Profile</Link>
+                        <Link href="../customers/profile" className='hover:text-[#d9b34d]'>{t("footer.profile")}</Link>
                     </li>
                 </ul>
             </div>
            {/** SOCIALS */}
             <div >
                 <ul className='flex lg:flex-col lg:gap-4 gap-8'>
-                    <li className='font-bold text-lg lg:block hidden'>Socials</li>
+                    <li className='font-bold text-lg lg:block hidden'>{t("footer.socials")}</li>
                     <li>
                         <Link href='#' className='hover:text-[#d9b34d] lg:block hidden' >Instagram</Link>
                         <Link href='#' className='hover:text-[#d9b34d] block lg:hidden' ><FaInstagram /></Link>
