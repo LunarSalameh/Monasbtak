@@ -167,3 +167,86 @@ body {
     right: 10px;
     cursor: pointer;
 }
+
+@media (max-width: 1128px) {
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 15px;
+        width: 100%;
+    }
+    .event-album-container {
+        width: 75%;
+        background-color: white;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        align-items: center;
+        height: 40%;
+    }
+    .Album-img-container {
+        position: relative;
+        width: 90%;
+        height: 18%;
+        display: inline-block;
+        flex: none;
+    }
+    .Album-container {
+        display: flex;
+        flex-direction: row;
+        gap: 18px;
+        overflow-x: auto;
+        white-space: nowrap;
+        flex-wrap: wrap;
+        width: 95%;
+        max-height: 78%;
+        justify-content: center;
+    }
+    .Album-img-container {
+        position: relative;
+        width: 445px;
+        height: 245px;
+        display: inline-block;
+        flex: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0px 15px;
+        width: 100%;
+    }
+    .event-album-container {
+        width: 75%;
+        background-color: white;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        align-items: center;
+        height: 40%;
+    }
+    .Album-img-container {
+        position: relative;
+        width: 77%;
+        height: 30%;
+        display: inline-block;
+        flex: none;
+    }
+    .Album-container {
+        display: flex;
+        flex-direction: row;
+        gap: 18px;
+        overflow-x: auto;
+        white-space: nowrap;
+        flex-wrap: wrap;
+        width: 95%;
+        max-height: 78%;
+        justify-content: center;
+    }
+}

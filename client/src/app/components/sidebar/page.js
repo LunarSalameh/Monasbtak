@@ -24,7 +24,7 @@ export default function Sidebar () {
     return (
         <>
             <aside className="flex h-full">
-                <div style={{ height: '100%' , position:'fixed'}}className={` ${open ? "w-64" : "w-20"} bg-white shadow-lg text-[#D9B34D]  p-5 duration-300`}>
+                <div style={{ height: '100%' , position:'fixed', zIndex: '2'}}className={` ${open ? "w-64" : "w-20"} bg-white shadow-lg text-[#D9B34D]  p-5 duration-300`}>
                     {
                         open ? 
                             <img 
