@@ -32,7 +32,6 @@ export default function AdminTopSection () {
                             <p className="font-bold text-lg">189</p>
                         </div>
                     </div> 
-                    
                     {/* Total Planners */}
                     <div className="flex gap-3 m-2">
                         <div className="bg-[#FFF7E0] rounded-full p-8 flex items-center"><FaUsers color="#D9B34D" size={18}  /></div>
