@@ -2,22 +2,21 @@
 import {React, useState} from "react";
 
 
-import { FaKey, FaRegCalendarCheck, FaDollarSign, FaCircle } from "react-icons/fa6";
-import { MdPeopleAlt } from "react-icons/md";
+import { FaKey,FaBuilding,FaRegCircleUser,FaRegCalendar ,FaDollarSign, FaCircle } from "react-icons/fa6";
 import { FiPackage } from "react-icons/fi";
-import { IoMdPhotos } from "react-icons/io";
+
 import { HiOutlineViewList } from "react-icons/hi";
 
 export default function Sidebar () {
     const [open,setOpen] = useState(true);
 
     const menu = [
-        {title: "Home Dashboard", src:<FaKey/> , path:"/planners/home"},
-        {title: "Planner Profile", src:<MdPeopleAlt/>, path:"/planners/profile" },
-        {title: "packages", src:<FiPackage/> , path:"/planners/packages" },
-        {title: "Event Album", src:<IoMdPhotos/>, path:"/planners/eventAlbum"},
-        {title: "Events", src:<FaRegCalendarCheck /> , path:"/planners/allEvents"},
-        {title: "Revenue", src:<FaDollarSign />, path:"/planners/revenue" }
+        {title: "Home Dashboard", src:<FaKey/> , path:"/admin/dashboard"},
+        {title: "Venues", src:<FaBuilding/>, path:"/admin/venues" },
+        {title: "Users", src:<FaRegCircleUser /> , path:"/admin/users" },
+        {title: "Planner Packages", src:<FiPackage/>, path:"/admin/plannerPackages"},
+        {title: "All Events", src:<FaRegCalendar /> , path:"/admin/events"},
+        {title: "Revenue", src:<FaDollarSign />, path:"/admin/revenue" }
     ]
 
 
