@@ -2,6 +2,7 @@
 
 import React, {useState} from "react";
 import { FaPhoneAlt } from "react-icons/fa";
+import './page.css';
 
 export default function PendingOffers () { 
 
@@ -49,7 +50,9 @@ export default function PendingOffers () {
 
     return ( 
         <>
-            <div className="bg-white rounded-lg mx-10 p-5  shadow-lg ">
+        <div className='page-container'>
+        <div className='packages-container'>
+            <div className="bg-white rounded-lg mx-10  ">
                 <div className="flex flex-col">
                     <h1 className="font-bold text-3xl mb-3">Pending Offers </h1>
                     <hr/>
@@ -98,6 +101,8 @@ export default function PendingOffers () {
                 </div>
 
             </div>
+        </div>
+    </div>
         </>
     );
 }
