@@ -1,6 +1,6 @@
 
 import TopSection from "@/app/components/planners/topSection/page";
-import Sidebar from "@/app/components/plannerSidebar/page";
+import Sidebar from "@/app/components/adminSidebar/page";
 import {React} from "react";
 
 export default function Venues () {

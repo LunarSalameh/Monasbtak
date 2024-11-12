@@ -97,7 +97,7 @@ function Page() {
                 </div>
                 <div className='Package-details'>
                   <span className='mid-font-size'>{pkg.name}</span>
-                  <span>{pkg.description}</span>
+                  <span className='display'>{pkg.description}</span>
                   <div className='row-flex'>
                     <div className='location'>
                       <Icon icon="hugeicons:location-04" className="Location-icon" />

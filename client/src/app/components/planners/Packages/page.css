@@ -254,3 +254,78 @@ body {
 .right-arrow {
   right: 10px;
 }
+
+@media (max-width: 768px) {
+    .location{
+        display: none;
+    }
+    .display{
+        display: none;
+    }
+    .row-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .Package-details {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-left: 12px;
+        width: 65%;
+        padding-top: 15px;
+    }
+    .Package-img-container {
+        position: relative;
+        width: 255px;
+        height: 125px;
+    }
+}
+
+@media (max-width:550px){
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0px 15px;
+        width: 100%;
+        align-items: center;
+        gap: 5px;
+    }
+    .btn {
+        display: none;
+    }
+    .row-flex {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .Package-Box {
+        border: 1.5px solid lightgray;
+        padding: 15px 10px;
+        border-radius: 5px;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        cursor: pointer;
+        transition: background-color 0.3s, border-color 0.3s;
+    }
+    .Package-details {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-left: 10px;
+        width: 90%;
+        padding-top: 15px;
+    }
+    .Package-img-container {
+        position: relative;
+        width: 260px;
+        height: 95px;
+    }
+}
