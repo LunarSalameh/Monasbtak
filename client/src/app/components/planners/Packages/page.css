@@ -87,7 +87,7 @@ body {
     transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
 }
 .Package-Box:hover {
-    background-color: #f0f0f0; /* Change background color on hover */
+    background-color: #f0f0f0; 
     border-color: #D9B34D;
 }
 .Package-img-container {
@@ -163,7 +163,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000; /* Ensure it appears above other content */
+    z-index: 1000; 
 }
   
 .modal {

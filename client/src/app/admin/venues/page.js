@@ -1,6 +1,7 @@
 
-import TopSection from "@/app/components/planners/topSection/page";
-import Sidebar from "@/app/components/adminSidebar/page";
+import TopSection from "../../components/Admin/adminTopSection/page";
+import Sidebar from "../../components/adminSidebar/page";
+import Venue from '../../components/Admin/venues/page'
 import {React} from "react";
 
 export default function Venues () {
@@ -10,6 +11,7 @@ export default function Venues () {
             <Sidebar/>
             <div className="flex flex-col" style={{width:'90%', marginLeft:'auto'}}>
                 <TopSection />
+                <Venue />
             </div>
         </div>
         </>
