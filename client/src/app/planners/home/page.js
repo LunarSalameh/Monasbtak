@@ -14,8 +14,8 @@ export default function PlannerHome () {
             <div className="flex flex-col" style={{width:'90%', marginLeft:'auto'}}>
                 <TopSection />
                 <PendingOffers/>
-                {/* <CurrentEvents />
-                <PreviousEvents /> */}
+                <CurrentEvents />
+                {/* <PreviousEvents /> */}
             </div>
         </div>
         </>

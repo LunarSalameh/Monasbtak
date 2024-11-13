@@ -1,0 +1,17 @@
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    margin-bottom: 3.7rem;
+  }
+.packages-container{
+    width: 75%;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    align-items: center;
+}
