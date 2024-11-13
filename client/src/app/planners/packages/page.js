@@ -7,7 +7,7 @@ import PlannerPackages from "@/app/components/planners/Packages/page";
 export default function Packages () {
     return (
         <>
-            <div className="flex">
+        <div className="flex">
             <Sidebar/>
             <div className="flex flex-col" style={{width:'90%', marginLeft:'auto'}}>
                 <TopSection />

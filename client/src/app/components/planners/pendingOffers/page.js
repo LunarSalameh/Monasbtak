@@ -53,7 +53,7 @@ export default function PendingOffers () {
         <div className='page-container'>
             
             <div className='packages-container'>
-                <div className="rounded-lg  ">
+                <div className="rounded-lg">
                     
                     {/* Heading */}
                     <div className="flex flex-col">

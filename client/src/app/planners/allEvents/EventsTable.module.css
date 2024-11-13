@@ -1,0 +1,48 @@
+.warpper {
+  padding: 20px;
+  background-color: #ffff;
+  margin: 20px;
+  border-radius: 20px;
+  width: 75%;
+ 
+}
+
+.warpper h2 {
+  font-size: 24px;
+  color: #4c1b41;
+  margin-bottom: 20px;
+}
+
+.warpper table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.warpper th,
+.warpper td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+.eventStat {
+  background-color: rgb(31, 166, 31);
+  border-radius: 20px;
+  
+  
+}
+
+@media (max-width: 768px) {
+  .warpper table,
+  .warpper tbody,
+  .warpper tr,
+  .warpper th,
+  .warpper td {
+    display: block;
+    width: 100%;
+  }
+  .warpper th,
+  .warpper td {
+    padding: 10px;
+    text-align: right;
+  }
+}
