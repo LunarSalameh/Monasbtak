@@ -15,7 +15,7 @@ export default function PlannerHome () {
                 <TopSection />
                 <PendingOffers/>
                 <CurrentEvents />
-                {/* <PreviousEvents /> */}
+                <PreviousEvents />
             </div>
         </div>
         </>

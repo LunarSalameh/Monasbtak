@@ -73,8 +73,7 @@ export default function CurrentEvents () {
 
                 <div className='packages-container'>
                     
-                    
-                    <div className='bg-white rounded-lg mx-10'>
+                    <div className='rounded-lg '>
                         
                         {/* Heading */}
                         <div className="flex flex-col">
@@ -83,7 +82,7 @@ export default function CurrentEvents () {
                         </div>
 
                         {/* BODY Cards  */}
-                        <div className="mx-auto flex gap-3 my-8 justify-center">
+                        <div className="mx-auto flex gap-8 my-8 justify-center">
                             
                             {/* Next Button */}
                             <button onClick={() => handleSlider(false)} >
@@ -93,10 +92,10 @@ export default function CurrentEvents () {
                             </button>
 
                             {/* Cards */}
-                            <div className="grid grid-cols-3 items-center justify-items-center gap-6">
+                            <div className="grid grid-cols-3 max-lg:grid-cols-1 items-center justify-items-center gap-6">
                                 {
                                     [0,1,2].map((offset) => (
-                                        <div key={offset} className=" border-gray-200 border-2 rounded-xl p-2 hover:bg-gray-100 hover:shadow-lg">
+                                        <div key={offset} className=" border-gray-200 border-2 rounded-xl p-2 hover:bg-gray-100 hover:shadow-lg hover:border-[#d9b34d] transition ease-out duration-300  hover:scale-90">
                                             <div>
                                                 {/* Image & price */}
                                                 <figure className='relative'>
@@ -114,7 +113,7 @@ export default function CurrentEvents () {
                                                 </div>
 
                                                 {/* Description  */}
-                                                <div className='px-2'>
+                                                <div className='px-2 max-lg:hidden'>
                                                     {currentEvent[(slider + offset) % currentEvent.length].description}
                                                 </div>
 
