@@ -93,7 +93,7 @@ const EventsTable = [
                     </tr>
                     </thead>
                     <tbody>
-                    {EventsTable.map((event) => (
+                    {EventsTable.map((event,index) => (
                         <tr key={EventsTable.id}>
                         <td>{event.customerName}</td>
                         <td>{event.venue}</td>

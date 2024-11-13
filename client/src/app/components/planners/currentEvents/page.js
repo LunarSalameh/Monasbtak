@@ -102,7 +102,7 @@ export default function CurrentEvents () {
                                                     <img 
                                                         src={currentEvent[(slider + offset) % currentEvent.length].Img} 
                                                         alt={currentEvent[(slider + offset) % currentEvent.length].Name}
-                                                        className='rounded-lg w-64 h-40 object-cover'
+                                                        className='rounded-lg w-70 h-40 object-cover'
                                                     />
                                                     <div className='bg-[#5a5a5a8e] bottom-2 left-2 w-fit px-3 rounded-lg text-white py-1 absolute '>{currentEvent[(slider + offset) % currentEvent.length].price}</div>
                                                 </figure>
