@@ -231,9 +231,10 @@ export default function Profile () {
                                     <p className="text-xl">Categories</p>
                                     <button className="py-1 px-2  text-[#D9B34D]" onClick={handleCategoriesModal}>Edit</button>
                                 </div>
+                                
                                 <div className="m-4 flex flex-wrap gap-2 ">
                                     {categories.map((category,index)=>(
-                                        <div key={index} className="bg-[#4c1b41] py-2 px-4 rounded-2xl text-white shadow-lg shadow-[#4c1b4161]">
+                                        <div key={index} className="bg-[#D9B34D] py-2 px-4 rounded-2xl text-white shadow-lg shadow-[#4c1b4161]">
                                             {category.name}
                                         </div>
                                     ))}
@@ -250,7 +251,7 @@ export default function Profile () {
                                 </div>
                                 <div className="m-4 flex flex-wrap gap-2 ">
                                     {Venues.map((venue,index)=>(
-                                        <div key={index} className="bg-[#4c1b41] py-2 px-4 rounded-2xl text-white shadow-lg shadow-[#4c1b4161]">
+                                        <div key={index} className="bg-[#D9B34D] py-2 px-4 rounded-2xl text-white shadow-lg shadow-[#4c1b4161]">
                                             {venue.name}
                                         </div>
                                     ))}
@@ -339,15 +340,36 @@ export default function Profile () {
 
                 {EditCategoriesModal && (
                     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-                        <div className="bg-white rounded-xl w-[50%] px-10 py-8 flex flex-col gap-6">
-                            <div className="font-bold text-xl mb-4">
+                        <div className="bg-white rounded-xl w-[50%] px-10 py-8 flex flex-col gap-4">
+                            <div className="font-bold text-xl mb-2">
                                 <p>Categories</p>
                                 <hr />
                             </div>
 
-                            <div className="m-4 flex flex-wrap gap-2">
+                            <div className="flex gap-2 justify-evenly">
+                                <label htmlFor="SelectedCategory"  className="text-lg">Categories: </label>
+                                <select name="SelectedCategory" className="w-1/2 border-2 border-[#4c1b41] rounded-lg py-1 px-3">
+                                        <option disabled className="text-gray-300" defaultValue="Choose Category To Add">Choose Category To Add</option>
+                                    {
+                                        categories.map((category,index)=> (
+                                            <option key={index} value={category.name}>
+                                                {category.name}
+                                            </option>
+                                        ))
+                                    }
+                                </select>
+                                <button
+                                    onClick={addCategory}
+                                    className="bg-[#D9B34D] px-5 py-2 rounded-lg text-white hover:bg-[#d9b44dd3]"
+                                >
+                                    Add
+                                </button>
+
+                            </div>
+
+                            <div className="m-4 flex flex-wrap gap-2 justify-between">
                                 {categories.map((category, index) => (
-                                    <div key={index} className="flex items-center gap-4 bg-[#4c1b41] py-2 px-4 rounded-2xl text-white shadow-lg shadow-[#4c1b4161]">
+                                    <div key={index} className="flex items-center gap-4 bg-[#D9B34D] py-2 px-4 rounded-2xl text-white shadow-lg shadow-[#4c1b4161]">
                                         <p>{category.name}</p>
                                         <TiDelete
                                             className="hover:text-gray-300 cursor-pointer"
@@ -357,21 +379,6 @@ export default function Profile () {
                                 ))}
                             </div>
 
-                            <div className="flex gap-2 mt-4">
-                                <input
-                                    type="text"
-                                    value={newCategory}
-                                    onChange={(e) => setNewCategory(e.target.value)}
-                                    placeholder="Add new category"
-                                    className="px-5 py-2 rounded-lg bg-white border-[#4c1b419c] border-2"
-                                />
-                                <button
-                                    onClick={addCategory}
-                                    className="bg-[#D9B34D] px-4 py-2 rounded-lg text-white"
-                                >
-                                    Add
-                                </button>
-                            </div>
                         </div>
                     </div>
                 )}
@@ -380,41 +387,47 @@ export default function Profile () {
                                 
                 {EditVenuesModal && (
                     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-                        <div className="bg-white rounded-xl w-[50%] px-10 py-8 flex flex-col gap-6">
-                            <div className="font-bold text-xl mb-4">
-                                <p>Venues</p>
-                                <hr />
-                            </div>
-
-                            <div className="m-4 flex flex-wrap gap-2">
-                                {Venues.map((venue, index) => (
-                                    <div key={index} className="flex items-center gap-4 bg-[#4c1b41] py-2 px-4 rounded-2xl text-white shadow-lg shadow-[#4c1b4161]">
-                                        <p>{venue.name}</p>
-                                        <TiDelete
-                                            className="hover:text-gray-300 cursor-pointer"
-                                            onClick={handleVenuesModal}
-                                        />
-                                    </div>
-                                ))}
-                            </div>
-
-                            <div className="flex gap-2 mt-4">
-                                <input
-                                    type="text"
-                                    value={newVenue}
-                                    onChange={(e) => setNewVenue(e.target.value)}
-                                    placeholder="Add new venue"
-                                    className="px-5 py-2 rounded-lg bg-white border-[#4c1b419c] border-2"
-                                />
-                                <button
-                                    onClick={addVenue}
-                                    className="bg-[#D9B34D] px-4 py-2 rounded-lg text-white"
-                                >
-                                    Add
-                                </button>
-                            </div>
+                    <div className="bg-white rounded-xl w-[50%] px-10 py-8 flex flex-col gap-4">
+                        <div className="font-bold text-xl mb-2">
+                            <p>Venues</p>
+                            <hr />
                         </div>
+
+                        <div className="flex gap-2 justify-evenly">
+                            <label htmlFor="SelectedCategory"  className="text-lg">Venues: </label>
+                            <select name="SelectedCategory" className="w-1/2 border-2 border-[#4c1b41] rounded-lg py-1 px-3">
+                                    <option disabled className="text-gray-300" defaultValue="Choose Category To Add">Choose Venue To Add</option>
+                                {
+                                    Venues.map((venue,index)=> (
+                                        <option key={index} value={venue.name}>
+                                            {venue.name}
+                                        </option>
+                                    ))
+                                }
+                            </select>
+                            <button
+                                onClick={addVenue}
+                                className="bg-[#D9B34D] px-5 py-2 rounded-lg text-white hover:bg-[#d9b44dd3]"
+                            >
+                                Add
+                            </button>
+
+                        </div>
+
+                        <div className="m-4 flex flex-wrap gap-2 justify-between">
+                            {Venues.map((venue, index) => (
+                                <div key={index} className="flex items-center gap-4 bg-[#D9B34D] py-2 px-4 rounded-2xl text-white shadow-lg shadow-[#4c1b4161]">
+                                    <p>{venue.name}</p>
+                                    <TiDelete
+                                        className="hover:text-gray-300 cursor-pointer"
+                                        onClick={handleVenuesModal}
+                                    />
+                                </div>
+                            ))}
+                        </div>
+
                     </div>
+                </div>
                 )}
 
 
