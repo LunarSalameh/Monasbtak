@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import stl from "./slider.module.css";
 
 const Slider = () => {
-  const slides = ['/slider11.jpg', '/slider22.jpg'];
+  const slides = ['/slider2.png','/slider11.jpg'];
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const next = () => {

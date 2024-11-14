@@ -18,19 +18,21 @@
 //   { month: 'Dec', revenue: 9000 },
 // ];
 
-// const RevenueChart = () => {
+// function page() {
 //   return (
-//     <ResponsiveContainer width="100%" height={400}>
-//       <LineChart data={data}>
-//         <CartesianGrid strokeDasharray="3 3" />
-//         <XAxis dataKey="month" />
-//         <YAxis />
-//         <Tooltip />
-//         <Legend />
-//         <Line type="monotone" dataKey="revenue" stroke="#8884d8" activeDot={{ r: 8 }} />
-//       </LineChart>
-//     </ResponsiveContainer>
-//   );
-// };
+//     <div>
+//          <ResponsiveContainer width="100%" height={400}>
+//         <LineChart data={data}>
+//             <CartesianGrid strokeDasharray="3 3" />
+//             <XAxis dataKey="month" />
+//             <YAxis />
+//             <Tooltip />
+//             <Legend />
+//             <Line type="monotone" dataKey="revenue" stroke="#8884d8" activeDot={{ r: 8 }} />
+//         </LineChart>
+//         </ResponsiveContainer>
+//     </div>
+//   )
+// }
 
-// export default RevenueChart;
+// export default page

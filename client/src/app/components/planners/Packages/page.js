@@ -140,6 +140,26 @@ function Page() {
                 <input type='file' accept='image/*' className='input' />
               </div>
               <div className='Modal-Add-package-container'>
+                <span>Category</span>
+                <select className='input' >
+                  <option value=''>Select Category</option>
+                  <option value='Wedding'>Wedding </option>
+                  <option value='Graduation'>Graduation </option>
+                  <option value='Maternity'>Maternity </option>
+                  <option value='Birthday'>Birthday </option>
+                  <option value='Formal'>Formal Events </option>
+                </select>
+              </div>
+              <div className='Modal-Add-package-container'>
+                <span>Sub Category</span>
+                <select className='input' >
+                  <option value=''>Select Sub Category</option>
+                  <option value='Luxuary'>Luxary </option>
+                  <option value='Luxuary'>Mid level</option>
+                  <option value='Luxuary'>On budgit </option>
+                </select>
+              </div>
+              <div className='Modal-Add-package-container'>
                 <span>Venue Name</span>
                 <input type='text' className='input' />
               </div>

@@ -17,7 +17,7 @@ export default function Sidebar () {
         {title: "packages", src:<FiPackage/> , path:"/planners/packages" },
         {title: "Event Album", src:<IoMdPhotos/>, path:"/planners/eventAlbum"},
         {title: "Events", src:<FaRegCalendarCheck /> , path:"/planners/allEvents"},
-        {title: "Revenue", src:<FaDollarSign />, path:"/planners/revenue" }
+        // {title: "Revenue", src:<FaDollarSign />, path:"/planners/revenue" }
     ]
 
 
@@ -53,7 +53,7 @@ export default function Sidebar () {
                             </li>
                         ))}
                     </ul>
-                    <div style={{ marginTop: '250px' }} className=" flex items-end gap-4 p-5 ">
+                    <div style={{ marginTop: '295px' }} className=" flex items-end gap-4 p-5 ">
                         <FaCircle color="#D9B34D" size={48}/>
                         { open &&
                             <div className={`text-sm flex flex-col`}>

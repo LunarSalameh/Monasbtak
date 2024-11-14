@@ -6,7 +6,23 @@ import { Icon } from '@iconify/react'
 import { IoIosSearch } from "react-icons/io";
 import { IoClose } from "react-icons/io5";
 
+
 function page() {
+  const [Edit, setEdit] = useState(false);
+
+  const openEdit = () => {
+      setEdit(true);
+  }
+  const closeEdit = () => {
+    setEdit(false);
+  }
+  const [AddUser, setAddUser] = useState(false);
+    const handleAddUser = () => {
+        setAddUser(true);
+    };
+    const handleCloseAddUser = () => {
+        setAddUser(false);
+    };
     const data = [
         {
             name: 'Jane Cooper',
@@ -15,6 +31,7 @@ function page() {
             email: 'jane@microsoft.com',
             type: 'Planner',
             image: '/customer_image.jpg',
+            edit: <button className='delete-btn-table' onClick={openEdit}><Icon icon="hugeicons:delete-02" className='delete-icon'/></button>,
         },
         {
             name: 'Jane Cooper',
@@ -23,6 +40,7 @@ function page() {
             email: 'jane@microsoft.com',
             type: 'Customer',
             image: '/customer_image.jpg',
+            edit: <button className='delete-btn-table' onClick={openEdit}><Icon icon="hugeicons:delete-02" className='delete-icon'/></button>,
         },
         {
             name: 'Jane Cooper',
@@ -31,6 +49,7 @@ function page() {
             email: 'jane@microsoft.com',
             type: 'Planner',
             image: '/customer_image.jpg',
+            edit: <button className='delete-btn-table' onClick={openEdit}><Icon icon="hugeicons:delete-02" className='delete-icon'/></button>,
         },
         {
             name: 'Jane Cooper',
@@ -39,6 +58,7 @@ function page() {
             email: 'jane@microsoft.com',
             type: 'Planner',
             image: '/customer_image.jpg',
+            edit: <button className='delete-btn-table' onClick={openEdit}><Icon icon="hugeicons:delete-02" className='delete-icon'/></button>,
         },
         {
             name: 'Jane Cooper',
@@ -47,6 +67,8 @@ function page() {
             email: 'jane@microsoft.com',
             type: 'Planner',
             image: '/customer_image.jpg',
+            edit: <button className='delete-btn-table' onClick={openEdit}><Icon icon="hugeicons:delete-02" className='delete-icon'/></button>,
+
         },
         {
             name: 'Jane Cooper',
@@ -55,6 +77,8 @@ function page() {
             email: 'jane@microsoft.com',
             type: 'Customer',
             image: '/customer_image.jpg',
+            edit: <button className='delete-btn-table' onClick={openEdit}><Icon icon="hugeicons:delete-02" className='delete-icon'/></button>,
+
         },
         {
             name: 'Jane Cooper',
@@ -63,6 +87,8 @@ function page() {
             email: 'jane@microsoft.com',
             type: 'Customer',
             image: '/customer_image.jpg',
+            edit: <button className='delete-btn-table' onClick={openEdit}><Icon icon="hugeicons:delete-02" className='delete-icon'/></button>,
+
         },
         {
             name: 'Jane Cooper',
@@ -71,6 +97,8 @@ function page() {
             email: 'jane@microsoft.com',
             type: 'Planner',
             image: '/customer_image.jpg',
+            edit: <button className='delete-btn-table' onClick={openEdit}><Icon icon="hugeicons:delete-02" className='delete-icon'/></button>,
+
         },
       ];
       
@@ -99,14 +127,11 @@ function page() {
           Header: 'Profile Image',
           accessor: 'image',
         },
+        {
+          Header:'',
+          accessor: 'edit',
+        }
       ];
-      const [AddUser, setAddUser] = useState(false);
-        const handleAddUser = () => {
-            setAddUser(true);
-        };
-        const handleCloseAddUser = () => {
-            setAddUser(false);
-        };
   return (
     <div className='page-container'>
       <div className='users-container'>
@@ -187,6 +212,20 @@ function page() {
         </div>
       </div>
       )}
+      {Edit && (
+        <div className="modal-overlay">
+          <div className="modal-delete">
+            <button className="close-button" onClick={closeEdit}><IoClose /></button>
+            <div className='delete-container-modal'>
+              <span className='mid-font-size bold-font'>Are you sure you want to delete this user</span>
+              <div className='delete-row-flex'>
+                <button className='btn'>Yes</button>
+                <button className='btn' onClick={closeEdit}>No</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        )}
     </div>
   )
 }

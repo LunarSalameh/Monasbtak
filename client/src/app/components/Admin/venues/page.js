@@ -167,7 +167,7 @@ function page() {
               </select>
             </div>
             <div className='Modal-Add-package-container'>
-              <span>Category</span>
+              <span>Sub Category</span>
               <select className='input' >
                 <option value=''>Select Sub Category</option>
                 <option value='Luxuary'>Luxary </option>

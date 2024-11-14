@@ -23,7 +23,7 @@ export default function Sidebar () {
               ]
         },
         {title: "All Events", src:<FaRegCalendar /> , path:"/admin/events"},
-        {title: "Revenue", src:<FaDollarSign />, path:"/admin/revenue" }
+        // {title: "Revenue", src:<FaDollarSign />, path:"/admin/revenue" }
     ]
 
     const handleSubmenuToggle = () => {
@@ -79,7 +79,7 @@ export default function Sidebar () {
                             </li>
                         ))}
                     </ul>
-                    <div style={{ marginTop: '250px' }} className=" flex items-end gap-4 p-5 ">
+                    <div style={{ marginTop: '295px' }} className=" flex items-end gap-4 p-5 ">
                         <FaCircle color="#D9B34D" size={48}/>
                         { open &&
                             <div className={`text-sm flex flex-col`}>
