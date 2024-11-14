@@ -66,11 +66,7 @@
 .navbar_item a {
   color: white;
   text-decoration: none;
-}
-
-.navbar_item a:hover {
-  text-decoration: underline;
-}
+}g
 .icon {
   width: 30px; /* Adjust the width as needed */
   height: 30px; /* Adjust the height as needed */
