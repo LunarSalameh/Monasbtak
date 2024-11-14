@@ -1,8 +1,8 @@
 
-import TopSection from "@/app/components/planners/topSection/page";
-import Sidebar from "@/app/components/sidebar/page";
+import TopSection from "../../components/planners/topSection/page";
+import Sidebar from "../../components/sidebar/page";
 import {React} from "react";
-import Album from'@/app/components/planners/eventAlbum/page'
+import Album from'../../components/planners/eventAlbum/page'
 
 export default function EventAlbum () {
     return (
