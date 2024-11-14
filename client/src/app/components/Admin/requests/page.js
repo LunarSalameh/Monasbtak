@@ -82,19 +82,19 @@ function page() {
   return (
     <div className='page-container'>
         <div className='requests-container'>
-        <div className='main-top'>
-            <div className='header'>
-            <span className='large-font-size bold-font'>Packages Requests</span>
+            <div className='main-top'>
+                <div className='header'>
+                <span className='large-font-size bold-font'>Packages Requests</span>
+                </div>
+                <div className="search-container">
+                    <IoIosSearch className="search-icon" />
+                    <input type="search" className="search-bar mid-font-size" placeholder="Search" />
+                </div>
             </div>
-            <div className="search-container">
-                <IoIosSearch className="search-icon" />
-                <input type="search" className="search-bar mid-font-size" placeholder="Search" />
+            <hr className='line'/>
+            <div className='table-container'>
+                <Table columns={columns} data={data} />
             </div>
-        </div>
-        <hr className='line'/>
-        <div className='table-container'>
-            <Table columns={columns} data={data} />
-        </div>
         </div>
         {viewdetails && (
            <div className='modal-overlay'>
