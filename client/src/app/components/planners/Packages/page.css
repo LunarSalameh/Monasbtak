@@ -173,6 +173,8 @@ body {
     width: 60%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: relative;
+    overflow-y: scroll;
+    max-height: 90%;
 }
 .Modal-Add-package-container {
     position: relative;

@@ -3,6 +3,7 @@ import Sidebar from "../../components/sidebar/page";
 import {React} from "react";
 
 
+
 export default function Revenue () {
     return (
         <>

@@ -7,7 +7,7 @@ const Table = ({ columns, data }) => {
     getTableProps,
     getTableBodyProps,
     headerGroups,
-    page, // Instead of rows, use page
+    page, 
     prepareRow,
     canPreviousPage,
     canNextPage,
@@ -50,27 +50,34 @@ const Table = ({ columns, data }) => {
     <>
       <table {...getTableProps()} className="table">
         <thead>
-          {headerGroups.map(headerGroup => (
-            <tr {...headerGroup.getHeaderGroupProps()}>
-              {headerGroup.headers.map(column => {
-                const { key, ...rest } = column.getHeaderProps();
-                return (
-                  <th key={key} {...rest}>{column.render('Header')}</th>
-                );
-              })}
-            </tr>
-          ))}
+          {headerGroups.map(headerGroup => {
+            const { key, ...restHeaderProps } = headerGroup.getHeaderGroupProps();
+            return (
+              <tr key={key} {...restHeaderProps}>
+                {headerGroup.headers.map(column => {
+                  const { key, ...restColumnProps } = column.getHeaderProps();
+                  return (
+                    <th key={key} {...restColumnProps}>
+                      {column.render('Header')}
+                    </th>
+                  );
+                })}
+              </tr>
+            );
+          })}
         </thead>
         <tbody {...getTableBodyProps()}>
           {page.map(row => {
             prepareRow(row);
-            const { key: rowKey, ...rowRest } = row.getRowProps();
+            const { key, ...restRowProps } = row.getRowProps();
             return (
-              <tr key={rowKey} {...rowRest}>
+              <tr key={key} {...restRowProps}>
                 {row.cells.map(cell => {
-                  const { key: cellKey, ...cellRest } = cell.getCellProps();
+                  const { key, ...restCellProps } = cell.getCellProps();
                   return (
-                    <td key={cellKey} {...cellRest}>{cell.render('Cell')}</td>
+                    <td key={key} {...restCellProps}>
+                      {cell.render('Cell')}
+                    </td>
                   );
                 })}
               </tr>

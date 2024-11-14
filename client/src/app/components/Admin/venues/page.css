@@ -141,7 +141,7 @@
     padding: 12px 10px;
 }
 .venue-box:hover {
-    background-color: #f0f0f094;    ; 
+    background-color: #f0f0f094;
     border-color: #D9B34D;
 }
 .img-container {
@@ -194,9 +194,11 @@
 }
 .Modal-Add-package-container {
     position: relative;
-    display: inline-block; 
+    display: inline-block;
     width: 55%;
-    flex: none; 
+    flex: none;
+    display: flex;
+    flex-direction: column;
 }
 .modal-content {
     margin-top: 20px;
