@@ -21,7 +21,7 @@ export default function Events () {
             package: "Package A",
             location: "Amman",
             details: "lorem ibsum ...",
-            status: <div className=' w-[75%] text-center text-white py-1 px-3 rounded-full bg-red-700'>Rejected</div>
+            status: <div className='w-fit text-center text-white py-1 px-3 rounded-full bg-red-700 max-sm:text-[12px]'>Rejected</div>
          },
          {
             customerName: 'Jane Cooper',
@@ -30,7 +30,7 @@ export default function Events () {
             package: "Package A",
             location: "Amman",
             details: "lorem ibsum ...",
-            status: <div className=' w-[75%]  text-center text-white py-1 px-3 rounded-full bg-yellow-600'>Finished</div>
+            status: <div className='w-fit  text-center text-white py-1 px-3 rounded-full bg-yellow-600 max-sm:text-[12px]'>Finished</div>
          },
          {
             customerName: 'Jane Cooper',
@@ -39,7 +39,7 @@ export default function Events () {
             package: "Package A",
             location: "Amman",
             details: "lorem ibsum ...",
-            status: <div className=' w-[75%] text-center text-white py-1 px-3 rounded-full bg-gray-500'>Canceled</div>
+            status: <div className='w-fit text-center text-white py-1 px-3 rounded-full bg-gray-500 max-sm:text-[12px]'>Canceled</div>
          },
          {
             customerName: 'Jane Cooper',
@@ -48,17 +48,7 @@ export default function Events () {
             package: "Package A",
             location: "Amman",
             details: "lorem ibsum ...",
-            status: <div className=' w-[75%] text-center text-white py-1 px-3 rounded-full bg-gray-500'>Canceled</div>
-         },
-        
-         {
-            customerName: 'Jane Cooper',
-            plannerName: 'Jacob Jones',
-            venue: 'Four Seasons Hotel',
-            package: "Package A",
-            location: "Amman",
-            details: "lorem ibsum ...",
-            status: <div className=' w-[75%] text-center text-white py-1 px-3 rounded-full bg-blue-600'>In Progress</div>
+            status: <div className='w-fit text-center text-white py-1 px-3 rounded-full bg-gray-500 max-sm:text-[12px]'>Canceled</div>
          },
         
          {
@@ -68,7 +58,17 @@ export default function Events () {
             package: "Package A",
             location: "Amman",
             details: "lorem ibsum ...",
-            status: <div className=' w-[75%] text-center text-white py-1 px-3 rounded-full bg-blue-600'>In Progress</div>
+            status: <div className='w-fit text-center text-white py-1 px-3 rounded-full bg-blue-600 max-sm:text-[12px]'>In Progress</div>
+         },
+        
+         {
+            customerName: 'Jane Cooper',
+            plannerName: 'Jacob Jones',
+            venue: 'Four Seasons Hotel',
+            package: "Package A",
+            location: "Amman",
+            details: "lorem ibsum ...",
+            status: <div className='w-fit text-center text-white py-1 px-3 rounded-full bg-blue-600 max-sm:text-[12px]'>In Progress</div>
          },
                  {
             customerName: 'Jane Cooper',
@@ -77,7 +77,7 @@ export default function Events () {
             package: "Package A",
             location: "Amman",
             details: "lorem ibsum ...",
-            status: <div className=' w-[75%] text-center text-white py-1 px-3 rounded-full bg-green-800'>Approved</div>
+            status: <div className='w-fit text-center text-white py-1 px-3 rounded-full bg-green-800 max-sm:text-[12px]'>Approved</div>
          },
          {
             customerName: 'Jane Cooper',
@@ -86,7 +86,7 @@ export default function Events () {
             package: "Package A",
             location: "Amman",
             details: "lorem ibsum ...",
-            status: <div className=' w-[75%] text-center text-white py-1 px-3 rounded-full bg-orange-600'>Pending</div>
+            status: <div className='w-fit text-center text-white py-1 px-3 rounded-full bg-orange-600 max-sm:text-[12px]'>Pending</div>
          },
          {
             customerName: 'Jane Cooper',
@@ -95,7 +95,7 @@ export default function Events () {
             package: "Package A",
             location: "Amman",
             details: "lorem ibsum ...",
-            status: <div className=' w-[75%] text-center text-white py-1 px-3 rounded-full bg-red-700'>Rejected</div>
+            status: <div className='w-fit text-center text-white py-1 px-3 rounded-full bg-red-700 max-sm:text-[12px]'>Rejected</div>
          },
          {
             customerName: 'Jane Cooper',
@@ -104,7 +104,7 @@ export default function Events () {
             package: "Package A",
             location: "Amman",
             details: "lorem ibsum ...",
-            status: <div className=' w-[75%] text-center text-white py-1 px-3 rounded-full bg-green-800'>Approved</div>
+            status: <div className='w-fit text-center text-white py-1 px-3 rounded-full bg-green-800 max-sm:text-[12px]'>Approved</div>
          },
          {
             customerName: 'Jane Cooper',
@@ -113,7 +113,7 @@ export default function Events () {
             package: "Package A",
             location: "Amman",
             details: "lorem ibsum ...",
-            status: <div className=' w-[75%]  text-center text-white py-1 px-3 rounded-full bg-orange-600'>Pending</div>
+            status: <div className='w-fit  text-center text-white py-1 px-3 rounded-full bg-orange-600 max-sm:text-[12px]'>Pending</div>
          },
          {
             customerName: 'Jane Cooper',
@@ -122,7 +122,7 @@ export default function Events () {
             package: "Package A",
             location: "Amman",
             details: "lorem ibsum ...",
-            status: <div className=' w-[75%] text-center text-white py-1 px-3 rounded-full bg-yellow-600'>Finished</div>
+            status: <div className='w-fit text-center text-white py-1 px-3 rounded-full bg-yellow-600 max-sm:text-[12px]'>Finished</div>
          },
       ];
       
@@ -132,7 +132,7 @@ export default function Events () {
           accessor: 'customerName',
         },
         {
-            Header:'planner]',
+            Header:'planner',
             accessor:'plannerName'
         },
         {

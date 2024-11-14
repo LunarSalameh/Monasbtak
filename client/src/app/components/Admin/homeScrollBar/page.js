@@ -20,12 +20,12 @@ export default function HomeScrollBar () {
 
 
     return(
-        <div className="page-container">
-            <div className='homeScroll-container'>
-                <div className='header'>
-                    <span className='large-font-size bold-font'>Home ScrollBar</span>
+        <div className="PHS-container">
+            <div className='HS-container'>
+                <div className='HS-header'>
+                    <span className='large-font-size bold-font max-lg:text-[24px] '>Home ScrollBar</span>
                 </div>
-                <hr className='line'/>
+                <hr className='HS-line'/>
 
                 <div className='grid grid-cols-2 gap-5 '>
                     
@@ -70,8 +70,8 @@ export default function HomeScrollBar () {
                     />
                     <label 
                         htmlFor="file-input" 
-                        className='bg-[#d9b34d] hover:bg-[#d9b44dc1] w-fit flex items-center gap-2 justify-items-center px-5 py-3 rounded-lg text-white text-lg'>
-                            Upload Image <GoUpload />
+                        className='bg-[#d9b34d] hover:bg-[#d9b44dc1] w-fit flex items-center gap-2 justify-items-center px-5 py-3 rounded-lg text-white max-md:text-sm'>
+                            Upload <GoUpload />
                     </label>
                  </div>
 
