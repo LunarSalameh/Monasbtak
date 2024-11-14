@@ -6,6 +6,7 @@ import WebsiteDesc from "../../components/WebDescription/WebsiteDesc";
 import Navbar from '../../components/navbar/page';
 import Footer from '../../components/footer/page';
 
+
 function page() {
   return (
     <>

@@ -2,16 +2,25 @@
 import React, { useState , useEffect } from 'react';
 import stl from './Navbar.module.css';
 import { HiViewList } from "react-icons/hi";
-
+import { useTranslation } from 'react-i18next';
+//import '../../i18n';
 const Navbar = () => {
+
+  
   useEffect(() => {
     document.body.style.fontFamily = "'Playfair Display', serif";
   }, []);
-
+  const { t, i18n } = useTranslation();
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
+  };
+
+   // Language switcher
+   const switchLanguage = () => {
+    const newLang = i18n.language === "en" ? "ar" : "en";
+    i18n.changeLanguage(newLang);
   };
   return (
     <nav className={stl.navbar}>
@@ -19,7 +28,7 @@ const Navbar = () => {
         <a href="/customers/landingPage"><img src="/Golden-logo.png" alt="logo" className={stl.logo} /></a>
       </div>
       <ul className={stl.navbar_list}>
-        <li className={stl.navbar_item}><a href="/customers/landingPage">Home</a></li>
+        <li className={stl.navbar_item}><a href="/customers/landingPage">{t("home")}</a></li>
         <li className={stl.navbar_item}><a href="#categories">Categories</a></li>
         <li className={stl.navbar_item}><a href="/customers/profile">profile</a></li>
         <li className={stl.navbar_item}><a href="/general/aboutUs">About Us</a></li>
