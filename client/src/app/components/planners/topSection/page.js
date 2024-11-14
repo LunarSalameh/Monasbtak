@@ -4,9 +4,9 @@ import { FaPersonWalking, FaCheck, FaCalendarCheck } from "react-icons/fa6";
 export default function TopSection () {
     return (
         <>
-            <section className="flex flex-col gap-8 mx-5 my-2 p-8 w-full  font-bold text-xl items-center">
+            <section className="flex flex-col gap-8 my-2 p-8 w-full  font-bold text-xl items-center">
                 {/** Welcome section */}
-                <div className="flex justify-between gap-5" style={{width:'80%'}}>
+                <div className="flex justify-between gap-5" style={{width:'75%'}}>
                     <div>Hello Planner #1👋🏼,</div>
                     <input type="search" className="rounded-xl font-normal max-md:hidden text-sm pl-3" placeholder="Search"/>
                 </div>

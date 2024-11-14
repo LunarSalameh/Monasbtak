@@ -1,4 +1,4 @@
-.page-container {
+.PA-container {
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -6,7 +6,7 @@
     margin-bottom: 3.7rem;
     
   }
-.packages-container{
+.PO-container{
     width: 75%;
     background-color: white;
     border-radius: 30px;
@@ -14,5 +14,20 @@
     flex-direction: column;
     justify-content: center;
     padding: 2rem;
-    align-items: center;
+    align-items:normal;
 }
+
+/* @media (max-width: 767px){
+  .PO-container{
+    width: 75%;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    align-items: normal;
+    
+}
+
+} */

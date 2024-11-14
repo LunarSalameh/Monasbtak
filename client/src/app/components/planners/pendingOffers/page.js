@@ -50,14 +50,15 @@ export default function PendingOffers () {
 
     return ( 
         <>
-        <div className='page-container'>
+        <div className='PA-container'>
             
-            <div className='packages-container'>
-                <div className="rounded-lg">
+            <div className='PO-container'>
+                
+                <div className="rounded-lg  ">
                     
                     {/* Heading */}
-                    <div className="flex flex-col">
-                        <h1 className="font-bold text-3xl">Pending Offers </h1>
+                    <div className="flex flex-col ">
+                        <h1 className="font-bold text-3xl mb-3 ">Pending Offers</h1>
                         <hr/>
                     </div>
 
@@ -72,12 +73,11 @@ export default function PendingOffers () {
                         </button>
                         
                         {/* CARD MAP */}
-                        <div className="flex flex-col items-center justify-evenly gap-3">
+                        <div className="grid grid-rows-2 max-lg:grid-cols-1 items-center justify-items-center gap-6">
                             {
                                 [0,1].map((offset)=>(
                                 <div key={offset} className=" border-gray-200 border-2 rounded-xl  hover:bg-gray-100 hover:shadow-lg hover:border-[#d9b34d] transition ease-out duration-300  hover:scale-90">
-                                    <div className="flex flex-col max-sm:flex-col gap-3 flex-wrap pl-2 md:flex-row justify-center">
-                                        <div className="p-2 w-full flex flex-row max-md:flex-col max-md:items-center gap-3">
+                                         <div className="p-2 w-full flex flex-row max-md:flex-col max-md:items-center gap-3">
                                             
                                             <img src={offers[(slider + offset) % offers.length].customerPP} className=" object-cover rounded-full w-20 h-20 items-start"/>
                                             
@@ -95,7 +95,6 @@ export default function PendingOffers () {
                                             </div>
                                         </div>
 
-                                    </div>
                                 </div>
                             ))}
                         </div>

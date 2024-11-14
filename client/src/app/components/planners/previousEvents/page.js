@@ -69,11 +69,11 @@ export default function PreviousEvents () {
 
     return (
         <>
-            <div className="page-container ">
+            <div className="PAE-container ">
 
-                <div className='packages-container'>
+                <div className='PE-container'>
                     
-                    <div className='rounded-lg mx-10'>
+                    <div className='rounded-lg'>
                         
                         {/* Heading */}
                         <div className="flex flex-col">
@@ -82,7 +82,7 @@ export default function PreviousEvents () {
                         </div>
 
                         {/* BODY Cards  */}
-                        <div className="mx-auto flex gap-8 my-8 justify-center">
+                        <div className="mx-auto flex gap-8  my-8 justify-center">
                             
                             {/* Next Button */}
                             <button onClick={() => handleSlider(false)} >
@@ -92,7 +92,7 @@ export default function PreviousEvents () {
                             </button>
 
                             {/* Cards */}
-                            <div className="grid grid-cols-3 max-lg:grid-cols-1 items-center justify-items-center gap-6">
+                            <div className="grid grid-cols-3 max-lg:grid-cols-1  items-center justify-items-center gap-6 ">
                                 {
                                     [0,1,2].map((offset) => (
                                         <div key={offset} className=" border-gray-200 border-2 rounded-xl p-2 hover:bg-gray-100 hover:shadow-lg hover:border-[#d9b34d] transition ease-out duration-300  hover:scale-90">
@@ -102,13 +102,13 @@ export default function PreviousEvents () {
                                                     <img 
                                                         src={previousEvent[(slider + offset) % previousEvent.length].Img} 
                                                         alt={previousEvent[(slider + offset) % previousEvent.length].Name}
-                                                        className='rounded-lg w-64 h-40 object-cover'
+                                                        className='rounded-lg w-64 h-40 max-md:h-40 max-md:w-40 object-cover'
                                                     />
-                                                    <div className='bg-[#5a5a5a8e] bottom-2 left-2 w-fit px-3 rounded-lg text-white py-1 absolute '>{previousEvent[(slider + offset) % previousEvent.length].price}</div>
+                                                    <div className='bg-[#5a5a5a8e] bottom-2 left-2 w-fit px-3 rounded-lg text-white py-1 absolute max-md:text-[10px] '>{previousEvent[(slider + offset) % previousEvent.length].price}</div>
                                                 </figure>
 
                                                 {/* Event Name */}
-                                                <div className='font-semibold p-2 text-lg mt-1'>
+                                                <div className='font-semibold p-2 text-lg mt-1 max-lg:text-sm'>
                                                     {previousEvent[(slider + offset) % previousEvent.length].Name}
                                                 </div>
 
@@ -118,7 +118,7 @@ export default function PreviousEvents () {
                                                 </div>
 
                                                 {/* Location  */}
-                                                <div className='flex items-center gap-2 px-1 pt-2 text-sm'>
+                                                <div className='flex items-center gap-2 px-1 pt-2 text-sm max-md:hidden'>
                                                     <FaLocationDot />
                                                     <p>{previousEvent[(slider + offset) % previousEvent.length].location}</p>
                                                 </div>

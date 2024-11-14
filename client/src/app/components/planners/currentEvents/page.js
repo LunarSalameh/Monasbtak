@@ -69,9 +69,9 @@ export default function CurrentEvents () {
 
     return (
         <>
-            <div className="page-container ">
+            <div className="PAC-container ">
 
-                <div className='packages-container'>
+                <div className='PC-container'>
                     
                     <div className='rounded-lg '>
                         
@@ -102,13 +102,13 @@ export default function CurrentEvents () {
                                                     <img 
                                                         src={currentEvent[(slider + offset) % currentEvent.length].Img} 
                                                         alt={currentEvent[(slider + offset) % currentEvent.length].Name}
-                                                        className='rounded-lg w-70 h-40 object-cover'
+                                                        className='rounded-lg w-64 h-40 max-md:h-40 max-md:w-40 object-cover'
                                                     />
                                                     <div className='bg-[#5a5a5a8e] bottom-2 left-2 w-fit px-3 rounded-lg text-white py-1 absolute '>{currentEvent[(slider + offset) % currentEvent.length].price}</div>
                                                 </figure>
 
                                                 {/* Event Name */}
-                                                <div className='font-semibold p-2 text-lg mt-1'>
+                                                <div className='font-semibold p-2 text-lg mt-1  max-lg:text-sm'>
                                                     {currentEvent[(slider + offset) % currentEvent.length].Name}
                                                 </div>
 
@@ -118,7 +118,7 @@ export default function CurrentEvents () {
                                                 </div>
 
                                                 {/* Location  */}
-                                                <div className='flex items-center gap-2 px-1 pt-2 text-sm'>
+                                                <div className='flex items-center gap-2 px-1 pt-2 text-sm max-md:hidden'>
                                                     <FaLocationDot />
                                                     <p>{currentEvent[(slider + offset) % currentEvent.length].location}</p>
                                                 </div>

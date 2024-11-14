@@ -1,9 +1,9 @@
 
-import CurrentEvents from "@/app/components/planners/currentEvents/page";
-import PendingOffers from "@/app/components/planners/pendingOffers/page";
-import PreviousEvents from "@/app/components/planners/previousEvents/page";
-import TopSection from "@/app/components/planners/topSection/page";
-import Sidebar from "@/app/components/sidebar/page";
+import CurrentEvents from "../../components/planners/currentEvents/page";
+import PendingOffers from "../../components/planners/pendingOffers/page";
+import PreviousEvents from "../../components/planners/previousEvents/page";
+import TopSection from "../../components/planners/topSection/page";
+import Sidebar from "../../components/sidebar/page";
 import {React} from "react";
 
 export default function PlannerHome () {

@@ -1,7 +1,7 @@
 "use client";
 
-import TopSection from "@/app/components/planners/topSection/page";
-import Sidebar from "@/app/components/sidebar/page";
+import TopSection from "../../components/planners/topSection/page";
+import Sidebar from "../../components/sidebar/page";
 import {React, useState} from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
