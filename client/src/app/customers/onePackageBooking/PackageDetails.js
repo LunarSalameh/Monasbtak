@@ -11,19 +11,22 @@ const PackageDetails = () => {
         <span className='line'></span>
       </div>
       <div className="content">
-        <img src='/wedding7.png' alt="Package" className="package-image" />
+        <div className='img-container'>
+          <img src='/wedding7.png' alt="Package" className="package-image" />
+          <img src='/wedding4.png' alt="Package" className="package-image" />
+        </div>
         <div className="details">
           <div className="planner-info">
             <img src='/planner.png' alt="Planner" className="planner-image" />
             <div className="planner-name">Planner Name</div>
             <div className="price">$99.9</div>
           </div>
-          <p className="description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-            ultrices ornare augue non tristique. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Nulla ultrices ornare augue non
-            tristique. Nulla ultrices ornare augue non tristique.
-          </p>
+          <div className='package-details'>
+            <span className="description">Category - Sub Category</span>
+            <span className="description">Venue : Hayya Amman Hotel</span>
+            <span className="description">Location :</span>
+            <p className="description">Discription : Luxury Wedding Package</p>
+          </div>
         </div>
       </div>
       <div className='headline'>
