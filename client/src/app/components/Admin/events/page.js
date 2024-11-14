@@ -21,7 +21,7 @@ export default function Events () {
             package: "Package A",
             location: "Amman",
             details: "lorem ibsum ...",
-            status: <div className='w-fit text-center text-white py-1 px-3 rounded-full bg-red-700 max-sm:text-[12px]'>Rejected</div>
+            status: div className='w-fit text-center text-white py-1 px-3 rounded-full bg-red-700 max-sm:text-[12px]'>Rejected</div>
          },
          {
             customerName: 'Jane Cooper',
