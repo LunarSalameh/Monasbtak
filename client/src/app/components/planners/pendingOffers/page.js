@@ -76,7 +76,7 @@ export default function PendingOffers () {
                         <div className="grid grid-rows-2 max-lg:grid-cols-1 items-center justify-items-center gap-6">
                             {
                                 [0,1].map((offset)=>(
-                                <div key={offset} className=" border-gray-200 border-2 rounded-xl  hover:bg-gray-100 hover:shadow-lg hover:border-[#d9b34d] transition ease-out duration-300  hover:scale-90">
+                                <div key={offset} className=" border-gray-200 border-2 rounded-xl  hover:bg-gray-100 h hover:border-[#d9b34d] ">
                                          <div className="p-2 w-full flex flex-row max-md:flex-col max-md:items-center gap-3">
                                             
                                             <img src={offers[(slider + offset) % offers.length].customerPP} className=" object-cover rounded-full w-20 h-20 items-start"/>

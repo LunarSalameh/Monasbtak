@@ -95,8 +95,8 @@ export default function CurrentEvents () {
                             <div className="grid grid-cols-3 max-lg:grid-cols-1 items-center justify-items-center gap-6">
                                 {
                                     [0,1,2].map((offset) => (
-                                        <div key={offset} className=" border-gray-200 border-2 rounded-xl p-2 hover:bg-gray-100 hover:shadow-lg hover:border-[#d9b34d] transition ease-out duration-300  hover:scale-90">
-                                            <div>
+                                        <div key={offset} className=" border-gray-200 border-2 rounded-xl p-2 hover:bg-gray-100 hover:border-[#d9b34d]">
+                                            <div className='container-current'>
                                                 {/* Image & price */}
                                                 <figure className='relative'>
                                                     <img 
@@ -106,7 +106,7 @@ export default function CurrentEvents () {
                                                     />
                                                     <div className='bg-[#5a5a5a8e] bottom-2 left-2 w-fit px-3 rounded-lg text-white py-1 absolute '>{currentEvent[(slider + offset) % currentEvent.length].price}</div>
                                                 </figure>
-
+                                                <div className='event-details-container'>
                                                 {/* Event Name */}
                                                 <div className='font-semibold p-2 text-lg mt-1  max-lg:text-sm'>
                                                     {currentEvent[(slider + offset) % currentEvent.length].Name}
@@ -123,6 +123,7 @@ export default function CurrentEvents () {
                                                     <p>{currentEvent[(slider + offset) % currentEvent.length].location}</p>
                                                 </div>
 
+                                                </div>
                                             </div>
                                         </div>
                                     ))

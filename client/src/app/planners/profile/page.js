@@ -124,12 +124,15 @@ export default function Profile () {
                                         type="text"
                                         id="firstName"
                                         value={profileData.firstName}
+
                                         onChange={handleInputChange}
                                         className="px-5 py-2 rounded-lg bg-white border-[#4c1b419c] border-2"
                                     />
                                 ) : (
-                                    <p>{profileData.firstName}</p>
-                                )}
+                                    <p style={{border: '1px solid lightgray', padding: '7px', borderRadius: '5px'}}>
+                                        {profileData.firstName}
+                                    </p>                          
+                                      )}
                             </div>
 
                             {/* 2nd Name */}
@@ -140,11 +143,14 @@ export default function Profile () {
                                         type="text"
                                         id="secondName"
                                         value={profileData.secondName}
+
                                         onChange={handleInputChange}
                                         className="px-5 py-2 rounded-lg bg-white border-[#4c1b419c] border-2"
                                     />
                                 ) : (
-                                    <p>{profileData.secondName}</p>
+                                    <p style={{border: '1px solid lightgray', padding: '7px', borderRadius: '5px'}}>
+                                        {profileData.secondName}
+                                    </p>
                                 )}
                             </div>
                         </div>
@@ -161,7 +167,9 @@ export default function Profile () {
                                     className="px-5 py-2 rounded-lg bg-white border-[#4c1b419c] border-2"
                                 />
                             ) : (
-                                <p>{profileData.email}</p>
+                                <p style={{border: '1px solid lightgray', padding: '7px', borderRadius: '5px'}}>
+                                    {profileData.email}
+                                </p>
                             )}
                         </div>
                         
@@ -183,7 +191,8 @@ export default function Profile () {
                                     
                                 />
                                 ):(
-                                    <p>{profileData.birthday.toLocaleDateString("en-US")}</p>
+                                    <p style={{border: '1px solid lightgray', padding: '7px', borderRadius: '5px'}}>
+                                        {profileData.birthday.toLocaleDateString("en-US")}</p>
                                 )}
                             </div>
 
@@ -199,7 +208,9 @@ export default function Profile () {
                                     className="px-5 py-1.5 rounded-lg bg-white border-[#4c1b419c] border-2"
                                 />
                             ) : (
-                                <p>{profileData.phoneNumber}</p>
+                                <p style={{border: '1px solid lightgray', padding: '7px', borderRadius: '5px'}}>
+                                    {profileData.phoneNumber
+                                }</p>
                             )}
                             </div>
 
@@ -218,7 +229,9 @@ export default function Profile () {
                                     className="px-5 py-2 rounded-lg bg-white border-[#4c1b419c] border-2"
                                 />
                             ) : (
-                                <p>{profileData.description}</p>
+                                <p style={{border: '1px solid lightgray', padding: '7px', borderRadius: '5px'}}>
+                                    {profileData.description}
+                                </p>
                             )}
                         </div>
 
